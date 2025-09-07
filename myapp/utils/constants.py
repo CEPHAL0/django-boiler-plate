@@ -1,0 +1,1 @@
+INTERNAL_APP_LABELS = ["admin", "auth", "contenttypes", "sessions", "users"]
