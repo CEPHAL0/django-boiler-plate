@@ -1,11 +1,9 @@
 from django.contrib.auth.models import Permission
 from rest_framework import status
 from rest_framework.views import APIView
-
 from myapp.configurations.yasg_wrapper import make_response_serializer, swagger_response
 from myapp.utils.responses import success, error
 from myapp.permissions.core_roles import IsSuperAdmin
-from tenants.models import TenantRoleGroup, Tenant
 from users.models import User
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework.status import HTTP_200_OK, HTTP_400_BAD_REQUEST
